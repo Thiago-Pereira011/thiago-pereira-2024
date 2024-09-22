@@ -95,7 +95,7 @@ a {
 	padding: 20px;
 }
 
-.jucrianca, .atualidade, .jogando, .jucont, .medalhas {
+.jucrianca, .atualidade, .jogando, .jucont, .med {
 	margin: 10px;
 	width: 100%;
 	height: auto;
@@ -120,7 +120,7 @@ a {
 	max-width: 200px;
 }
 
-.medalhas {
+.med {
 	max-width: 500px;
 }
 
