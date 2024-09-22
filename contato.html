@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<title>Fale conosco</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Fale conosco">
+		<meta name="keywords" content="Fale, Conosco, Converse, Mensagem">
+		<meta name="author" content="Thiago Pereira Bispo da Silva">
+		<link rel="icon" type="image/png" href="img/julinha.jpg">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script language="Javascript" type="text/javascript">
+			function validar() {
+				var nome = form1.nome.value;
+				var email = form1.email.value;
+				var nota = form1.nota.value;
+
+				if (nome == "") {
+					alert("Preencha o campo com seu nome");
+					form1.nome.focus();
+					return false;
+				}
+
+				if (nome.length < 5) {
+					alert("Preencha o campo com seu nome completo");
+					form1.nome.focus();
+					return false;
+				}
+
+				if (email == "") {
+					alert("Preencha o campo com seu email");
+					form1.email.focus();
+					return false;
+				}
+
+				if (nota == "") {
+					alert("Preencha o campo com sua nota");
+					form1.nota.focus();
+					return false;
+				}
+				alert("Dados enviados com sucesso!");
+				form1.reset();
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="destaque.html">Destaque</a></li>
+				<li><a href="desafios.html">Desafios</a></li>
+				<li><a href="medalhas.html">Medalhas</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</div><br>
+		<center>
+			<div id="section_c">
+				<div class="contato">
+					<h1>Fale conosco!</h1><br>
+					<form name="form1" action="#" method="post">
+						Nome: <input name="nome" type="text"><br><br>
+						Email: <input name="email" type="text"><br><br>
+						Deixe sua Nota!
+						<select name="nota">
+							<option></option>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+						</select><br><br>
+						<textarea cols="50" rows="15" name="coment"></textarea><br><br>
+						<input type="submit" onclick="return validar()">
+						<input type="reset" name="limpa" value="Limpar">
+					</form>
+				</div>
+			</div>
+		</center>
+		<br>
+		<div id="footer">
+			<p><b>Thiago Pereira 2024 - &copy Todos os direitos reservados<br>Trabalho acadêmico sem fins lucrativos</b></p>
+		</div>
+	</body>
+</html>

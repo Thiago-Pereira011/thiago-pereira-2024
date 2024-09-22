@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: rockwell;
+}
+
+body {
+	max-width: 900px;
+	margin: 0 auto;
+	background: #000;
+}
+
+#header {
+	width: 100%;
+	margin: 0 auto;
+	list-style: none;
+	display: flex;
+	padding: 0;
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+	justify-content: center;
+}
+
+#header li {
+	list-style: none;
+	display: inline-grid;
+	padding: 0px 0px;
+	margin: 5px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #292928;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+	transition: color 0.3s;
+}
+
+#header li::after {
+	content: '';
+	background: #1a58dd;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+#header li:hover {
+	color: #fff;
+}
+
+#header li:hover::after {
+	top: 50%;
+	opacity: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+}
+
+#banner {
+	text-align: center;
+	background-color: #583B75;
+	padding: 5px;
+}
+
+#banner img {
+	display: inline-block;
+	max-width: 70%;
+	height: auto;
+}
+
+.article {
+	text-align: center;
+	font-size: 10px;
+	color: #000;
+	background-color: #583B75;
+	padding: 20px;
+}
+
+.article1 {
+	text-align: justify;
+	font-size: 15px;
+	color: #ffffff;
+	background-color: #583B75;
+	padding: 20px;
+}
+
+.jucrianca, .atualidade, .jogando, .jucont, .medalhas {
+	margin: 10px;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+}
+
+.jucrianca {
+	float: left;
+	max-width: 250px;
+}
+
+.atualidade {
+	max-width: 250px;
+	float: right;
+}
+
+.jogando {
+	max-width: 400px;
+}
+
+.jucont {
+	max-width: 200px;
+}
+
+.medalhas {
+	max-width: 500px;
+}
+
+.article4 {
+	background-color: #583B75;
+	text-align: center;
+	padding: 80px;
+	color: #ffffff;
+}
+
+#section_c {
+	background-color: #583B75;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	color: #ffffff;
+}
+
+#contato {
+	text-align: center;
+}
+
+textarea {
+	resize: none;
+}
+
+#footer {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #520a64;
+	padding: 20px;
+}
+
+/*RESPONSIVIDADE Microsoft Lumia 550*/
+@media screen and (min-width:360px) and (max-width:640px){
+    body, div{}
+#footer { margin-left:0px;}
+}
+
+/*RESPOVIVIDADE Ipad  e ipad mini*/
+@media screen and (min-width:768px) and (max-width:1024px){/*ipad*/
+    body, div{}
+    #footer { margin-left:0px;}		
+}
